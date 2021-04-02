@@ -17,13 +17,16 @@ export const MovieList = () => {
     return ( 
       
         <section className="movie-list-container"> 
+        <div className="maincontainer">
           {movies.map((movie)=> (
-            <Link to={`/movies/${movie.id}`}>
+            <Link to={`/movies/${movie.id}`} className="movie-card">
                 <div key= {movie.id} className="movie-thumb">
-                <MovieThumb {...movie} />
+                    <MovieThumb {...movie} />
                 </div>
             </Link>
+
           ))}
+          </div>
         </section>
       
     )       
