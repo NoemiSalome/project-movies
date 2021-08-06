@@ -5,7 +5,7 @@ import { MovieList } from "./pages/MovieList"
 import { MovieDetail } from "./pages/MovieDetail"
 
 export const App = () => {
-  
+
   return (
     <>
       <BrowserRouter>
